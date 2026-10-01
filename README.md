@@ -10,23 +10,28 @@ A high-performance architectural concept and functional simulator of **Distribut
 
 ---
 
-## 🚀 Instant Execution (No Cloning Required)
+## 🚀 How to Run
 
-End users do not need to download folders, setup paths, or clone this repository. You can execute this advanced system simulation directly from the cloud using **one single command**.
+### Windows Users
+1. Download `main.py` and `run.bat` and create a folder in your PC and move the two files to it.
 
-### Option 1: Using Python Native Pipe (Recommended)
-As long as you have Python 3 installed, copy and paste this command into your terminal (**PowerShell** on Windows, or **Terminal** on Linux/macOS) to fetch and execute the system directly in memory:
+<img width="850" height="311" alt="Screenshot 2026-10-01 133223" src="https://github.com/user-attachments/assets/d309de57-1bd8-4b73-8b30-6a0638bb9312" />
+<img width="163" height="138" alt="Screenshot 2026-10-01 133641" src="https://github.com/user-attachments/assets/526e15cf-3f14-49cc-8d06-19c31c112691" />
 
+2. Double-click `run.bat` to execute the simulation instantly.
+Obs.: If you try to click `run.bat`, you will probably see this wraning on your screen above. But don't worry and click on the button "Run" anyways.
+
+<img width="1361" height="768" alt="image" src="https://github.com/user-attachments/assets/d71fd9f2-8df0-41a5-b0e5-50f975dee87c" />
+
+After that, the terminal window will open and the simulation will be executed instantly.
+
+<img width="637" height="462" alt="image" src="https://github.com/user-attachments/assets/faa2e23d-e01e-4be5-a960-cda6dc4889b7" />
+---
+
+### Linux & macOS Users
+Run the script directly via terminal:
 ```bash
-python -c "import urllib.request; exec(urllib.request.urlopen('https://githubusercontent.com').read().decode('utf-8'))"
-```
-*(Note: Remember to replace `claudecoded/hypersync-core` with your actual GitHub username and repository name if they differ).*
-
-### Option 2: Running via Remote Docker Container
-If you prefer full process isolation without exposing your host machine, fire up the overdrive core instantly using this single Docker execution string:
-
-```bash
-docker run --rm -it python:3.11-slim python -c "import urllib.request; exec(urllib.request.urlopen('https://githubusercontent.com').read().decode('utf-8'))"
+python3 main.py
 ```
 
 ---
