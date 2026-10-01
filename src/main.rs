@@ -1,3 +1,6 @@
+mod memory_pool;
+mod ffi;
+
 use serde::{Deserialize, Serialize};
 use std::collections::HashMap;
 use std::env;
